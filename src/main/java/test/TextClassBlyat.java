@@ -15,12 +15,6 @@ public class TextClassBlyat implements Initializable {
 
     private StringProperty sheesh = new SimpleStringProperty();
 
-
-    TextClassBlyat(){
-        sheesh.set("ora");
-        text1.textProperty().bind(this.sheesh);
-    }
-
     public void changeText(){
         sheesh.set(sheesh.getValue()+"1");
     }
