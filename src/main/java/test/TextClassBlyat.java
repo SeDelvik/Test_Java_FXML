@@ -23,6 +23,7 @@ public class TextClassBlyat implements Initializable {
     private StringProperty sheesh = new SimpleStringProperty();
     private ObservableList<MrCl> list;
 
+
     public void setText(){
         sheesh.set("ora");
     }
