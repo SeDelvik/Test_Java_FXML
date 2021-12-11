@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.layout.*?>
-
 <?import javafx.scene.text.Text?>
-<VBox xmlns="http://javafx.com/javafx"
-      xmlns:fx="http://javafx.com/fxml"
-      fx:controller="test.TextClassBlyat"
-      prefHeight="400.0" prefWidth="600.0">
+<?import javafx.scene.control.Button?>
+
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.TextClassBlyat">
     <children>
-        <Text text="4" fx:id="text1"/>
-        <Button text="Change" onAction="#changeText"/>
+        <Text fx:id="text1" />
+        <Button onAction="#changeText" text="Change" />
+      <ListView fx:id="listObj" prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="newItem" mnemonicParsing="false" onAction="#putNew" text="new" />
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Text fx:id="curObj" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+         </children>
+      </VBox>
     </children>
 </VBox>
