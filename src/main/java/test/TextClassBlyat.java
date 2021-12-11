@@ -25,7 +25,7 @@ public class TextClassBlyat implements Initializable {
 
 
     public void setText(){
-        sheesh.set("ora");
+        sheesh.set("oraHuy");
     }
 
     public void changeText(){
